@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Nunito+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 2rem;
+
+    /* Vocal Trace Brand Colors */
+    --navy: 25.5 0.089 243.5;
+    --teal: 66.5 0.118 192.5;
+    --cream: 98.2 0.012 80;
+    --cream-dark: 95.5 0.018 80;
+
+    /* Shadcn tokens mapped to brand */
+    --background: 98.2 0.012 80;
+    --foreground: 25.5 0.089 243.5;
+    --card: 100 0 0;
+    --card-foreground: 25.5 0.089 243.5;
+    --popover: 100 0 0;
+    --popover-foreground: 25.5 0.089 243.5;
+    --primary: 25.5 0.089 243.5;
+    --primary-foreground: 98.2 0.012 80;
+    --secondary: 95.5 0.018 80;
+    --secondary-foreground: 25.5 0.089 243.5;
+    --muted: 95.5 0.018 80;
+    --muted-foreground: 55 0.04 243.5;
+    --accent: 66.5 0.118 192.5;
+    --accent-foreground: 100 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 90 0.02 80;
+    --input: 90 0.02 80;
+    --ring: 66.5 0.118 192.5;
+    --chart-1: 66.5 0.118 192.5;
+    --chart-2: 25.5 0.089 243.5;
+    --chart-3: 80 0.06 150;
+    --chart-4: 75 0.1 120;
+    --chart-5: 60 0.12 200;
+    --sidebar: 98.2 0.012 80;
+    --sidebar-foreground: 25.5 0.089 243.5;
+    --sidebar-primary: 25.5 0.089 243.5;
+    --sidebar-primary-foreground: 98.2 0.012 80;
+    --sidebar-accent: 95.5 0.018 80;
+    --sidebar-accent-foreground: 25.5 0.089 243.5;
+    --sidebar-border: 90 0.02 80;
+    --sidebar-ring: 66.5 0.118 192.5;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #FEF9F3;
+    color: #1A365D;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #1A365D;
+    line-height: 1.15;
+  }
+}
+
+@layer components {
+  /* Magic Jelly Button */
+  .magic-jelly-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2.25rem;
+    border-radius: 32px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.0625rem;
+    color: #ffffff;
+    background: linear-gradient(160deg, #3ecfc5 0%, #2DADA3 40%, #1d8f86 100%);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    /* 3D gummy candy effect */
+    box-shadow:
+      0 6px 20px rgba(45, 173, 163, 0.45),
+      0 2px 6px rgba(45, 173, 163, 0.3),
+      inset 0 2px 6px rgba(255, 255, 255, 0.45),
+      inset 0 -3px 8px rgba(0, 0, 0, 0.12);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .magic-jelly-btn::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 10%;
+    width: 80%;
+    height: 40%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 100%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .magic-jelly-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow:
+      0 10px 28px rgba(45, 173, 163, 0.55),
+      0 4px 10px rgba(45, 173, 163, 0.35),
+      inset 0 2px 8px rgba(255, 255, 255, 0.5),
+      inset 0 -3px 8px rgba(0, 0, 0, 0.12);
+  }
+
+  .magic-jelly-btn:active {
+    transform: scale(0.96) translateY(1px);
+    box-shadow:
+      0 3px 10px rgba(45, 173, 163, 0.4),
+      0 1px 4px rgba(45, 173, 163, 0.25),
+      inset 0 3px 10px rgba(0, 0, 0, 0.15),
+      inset 0 1px 4px rgba(255, 255, 255, 0.3);
+  }
+
+  .magic-jelly-btn-lg {
+    padding: 1.125rem 2.75rem;
+    font-size: 1.25rem;
+    border-radius: 32px;
+  }
+
+  .magic-jelly-btn-sm {
+    padding: 0.625rem 1.5rem;
+    font-size: 0.9375rem;
+    border-radius: 32px;
+  }
+
+  /* Section container */
+  .section-card {
+    border-radius: 32px;
+    background: #ffffff;
+  }
+
+  /* Dot trail */
+  .dot-trail-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2DADA3;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  .dot-trail-dot.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .dot-trail-dot.hidden-dot {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+}
+
+@layer utilities {
+  .text-navy { color: #1A365D; }
+  .text-teal { color: #2DADA3; }
+  .bg-cream { background-color: #FEF9F3; }
+  .bg-navy { background-color: #1A365D; }
+  .bg-teal { background-color: #2DADA3; }
+  .border-teal { border-color: #2DADA3; }
+  .border-navy { border-color: #1A365D; }
+}

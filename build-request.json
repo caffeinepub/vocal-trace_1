@@ -1,0 +1,243 @@
+{
+  "kind": "build_request",
+  "title": "Vocal Trace Toddler Speech App Landing Page",
+  "projectName": "Vocal Trace",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Implement a global design system using Primary Navy Blue (#1A365D), Accent Teal Green (#2DADA3), and Soft Cream (#FEF9F3) as the background. Apply a heavy sans-serif font (e.g., 'Nunito' or 'Poppins' via Google Fonts) for all headings. All containers must use border-radius: 32px. No sharp corners anywhere on the page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Color Palette: Primary Navy Blue (#1A365D), Accent Teal Green (#2DADA3), and Soft Cream Backgrounds (#FEF9F3)",
+          "Avoid sharp corners; use border-radius: 32px on all containers",
+          "Use heavy, sans-serif fonts for headings"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All backgrounds default to #FEF9F3 cream",
+        "Primary headings render in #1A365D navy",
+        "Accent elements use #2DADA3 teal",
+        "border-radius: 32px is applied to all card and container elements",
+        "Headings use a heavy weight (700–900) sans-serif font loaded from Google Fonts"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create all Teal CTA buttons as 3D 'Magic Jelly' style: glossy background (#2DADA3), heavy inner-glow (inset box-shadow with a lighter teal), a subtle drop shadow beneath, border-radius: 32px, and a slight scale-down transform on :active to simulate a squish press. These buttons must look like 3D gummy candy.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Buttons should look like 3D 'Magic Jelly' (glossy, rounded, and tactile)",
+          "apply a heavy inner-glow and a subtle drop shadow to the Teal buttons to make them look like 3D gummy candy"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Teal buttons have a visible gloss/shine effect using CSS gradients or pseudo-elements",
+        "A heavy inset box-shadow creates an inner glow effect",
+        "A drop shadow is visible beneath each button",
+        "Pressing (active state) scales the button down slightly (e.g., scale(0.96))",
+        "All teal buttons share this consistent style via a reusable component or CSS class"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build a sticky top navigation bar with the Vocal Trace logo (navy text 'Vocal Trace' with a teal checkmark-rocket icon rendered as SVG) on the left, navigation links in the center, and a small Magic Jelly 'Get Started' button on the right. The navbar background should be cream (#FEF9F3) with a subtle shadow on scroll.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Logo Theme: Use the provided Vocal Trace logo (Navy blue text with a Teal Green 'Checkmark-Rocket' icon)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navbar is sticky and remains visible on scroll",
+        "Logo SVG is visible with teal rocket-checkmark icon and navy 'Vocal Trace' text",
+        "Navigation links are present (e.g., How It Works, Features, Testimonials)",
+        "A Magic Jelly CTA button appears in the top right",
+        "A shadow appears on the navbar when the user scrolls down"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Implement the Hero section with: headline 'Watch Their First Words Take Flight.' in heavy navy type, sub-headline 'The speech-boosting app that turns vocal traces into big milestones. Designed by experts, loved by little explorers.', a giant teal Magic Jelly CTA button labeled 'Start the Journey', and a split-screen illustration — left side showing a happy toddler, right side showing a colorful app UI with a 'Peeking Friend' character peeking from the bottom edge of a rounded screen mockup.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Headline: 'Watch Their First Words Take Flight.'",
+          "Sub-headline: 'The speech-boosting app that turns vocal traces into big milestones.'",
+          "CTA: A giant Teal 'Magic Jelly' button labeled 'Start the Journey.'",
+          "A playful split-screen showing a happy toddler on one side and the app's 'Peeking Friend' UI on the other"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Headline text matches exactly: 'Watch Their First Words Take Flight.'",
+        "Sub-headline text matches exactly",
+        "A large teal Magic Jelly button labeled 'Start the Journey' is prominently displayed",
+        "A split-screen visual is present showing toddler illustration and app UI mockup",
+        "The Peeking Friend character peeks from the bottom of the app mockup panel",
+        "The hero section fills the viewport on desktop"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add a Social Proof Bar below the hero: a clean horizontal row displaying three grayscale trust badges/logos for 'Parent's Choice Award', 'Speech Pathology Approved', and 'STEM Kids 2026'. Use small illustrated badge icons in grayscale with the label text below each. Separate them with subtle dividers.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Add a clean row of grayscale logos for 'Parent's Choice Award,' 'Speech Pathology Approved,' and 'STEM Kids 2026.'"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three trust badges are displayed in a single horizontal row",
+        "All badge icons and text are rendered in grayscale",
+        "Badge labels match: 'Parent's Choice Award', 'Speech Pathology Approved', 'STEM Kids 2026'",
+        "The bar sits between the hero and the How It Works section"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build the 'How It Works' section with a bold section heading, three equal columns each with a large rounded icon container (teal background), a step number, a bold title, and descriptive copy. Step 1: 'Listen' – 'Vocal Trace captures your child's unique vocalizations.' Step 2: 'Interact' – 'Our Magic Jelly UI responds to every sound with delightful haptic feedback.' Step 3: 'Grow' – 'Expert-backed pathways bridge the gap between babbling and words.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Use three columns with rounded icons.",
+          "Step 1: Listen.",
+          "Step 2: Interact.",
+          "Step 3: Grow."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section has a bold heading (e.g., 'How It Works')",
+        "Three columns are displayed side by side on desktop, stacked on mobile",
+        "Each column has a rounded icon container with teal background",
+        "Step titles and descriptions match the specified copy exactly",
+        "Step numbers (1, 2, 3) are visually prominent"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Implement the Feature Showcase with an alternating left-right layout for two features. Feature A: 'Tactile Feedback' — 'Magic Jelly buttons that squish when touched to teach cause-and-effect.' Feature B: 'Safe Exploration' — '100% Ad-free, kid-safe environment with parental gates.' Each feature row should have an illustration/mockup on one side and bold headline + copy on the other, inside a rounded (32px) cream or light-teal card.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Feature A: 'Tactile Feedback.'",
+          "Feature B: 'Safe Exploration.'",
+          "Alternating Layout"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Two feature rows are displayed with alternating image/text orientation",
+        "Feature A copy references Magic Jelly squish and cause-and-effect",
+        "Feature B copy references 100% Ad-free, kid-safe, and parental gates",
+        "Each row is wrapped in a rounded container (border-radius: 32px)",
+        "Layout reverses cleanly on desktop (image-left / image-right alternation)"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Build a Testimonial Section with a large soft navy/teal-tinted rounded card (border-radius: 32px) containing a parent quote about their child's speech progress, the parent's name and child's age, and large decorative quotation mark. Use a sample testimonial: '\"Vocal Trace helped our daughter say her first real word in just three weeks. We cried happy tears!\" — Sarah M., Mom of Lily, age 2.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "A large, soft-blue rounded card featuring a quote from a parent about their child's progress."
+        ]
+      },
+      "acceptanceCriteria": [
+        "A large rounded card (32px radius) is displayed centered on the page",
+        "The card contains a parent testimonial quote, name, and child's age",
+        "A large decorative quotation mark is visible",
+        "The card uses a soft teal or navy-tinted background to distinguish it from the cream page background"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Add a Footer CTA section with a bold headline encouraging parents to get started, a teal Magic Jelly button labeled 'Unlock Their Voice Today', and a brief supporting tagline. Below it, include a minimal footer with the Vocal Trace logo, copyright notice, and links to Privacy Policy and Terms of Use.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Reiterate the Teal 'Magic Jelly' button with the text 'Unlock Their Voice Today.'"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A prominent section above the footer contains a bold headline and the 'Unlock Their Voice Today' Magic Jelly button",
+        "The footer includes the Vocal Trace logo, copyright line, and Privacy/Terms links",
+        "The CTA button matches the Magic Jelly style defined in REQ-2"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Implement a scrolling dot-trail motif connecting all page sections. As the user scrolls, a series of small teal dots (inspired by the Vocal Trace logo motif) forms a decorative vertical path along the left or center of the page, creating a visual 'trace' or journey between sections. Use CSS animation or an SVG path with scroll-driven opacity/position to bring it to life.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Ensure the 'Vocal Trace' dot motif (from the logo) is used as a decorative 'path' or 'trail' that connects the sections as the user scrolls."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Teal dots are visible as a decorative trail between sections",
+        "The trail animates or reveals progressively as the user scrolls down",
+        "Dots are styled to match the teal brand color (#2DADA3)",
+        "The motif does not obstruct readable content and remains decorative"
+      ]
+    }
+  ],
+  "constraints": [
+    "All user-facing copy must match the exact wording specified in the requirements",
+    "Color palette must strictly use #1A365D, #2DADA3, and #FEF9F3 — no substitutions",
+    "All containers and buttons must use border-radius: 32px minimum — no sharp corners",
+    "No backend logic is required; this is a purely static frontend landing page",
+    "Do not use blue or purple as primary accent colors — teal (#2DADA3) is the sole accent"
+  ],
+  "nonGoals": [
+    "User authentication or login functionality",
+    "App store integration or actual app download flow",
+    "Backend data storage or user tracking",
+    "Real audio or speech processing features",
+    "Multi-language or localization support",
+    "Animated 3D scenes or Three.js usage"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Cheerful cartoon toddler sitting and smiling, warm and playful illustration style on a soft cream background (hero-toddler.dim_600x700.png)",
+      "Colorful rounded smartphone mockup showing a playful kids app UI with a cute cartoon animal character peeking from the bottom edge, teal and navy colors (hero-app-mockup.dim_600x700.png)",
+      "Circular badge icon with a ribbon and star for 'Parent's Choice Award', grayscale flat illustration (badge-parents-choice.dim_120x120.png)",
+      "Circular badge icon with a speech bubble and checkmark for 'Speech Pathology Approved', grayscale flat illustration (badge-speech-pathology.dim_120x120.png)",
+      "Circular badge icon with a rocket and star for 'STEM Kids 2026', grayscale flat illustration (badge-stem-kids.dim_120x120.png)",
+      "Rounded tablet screen mockup showing colorful jelly-style buttons being pressed, teal glow effects (feature-tactile.dim_560x420.png)",
+      "Illustration of a friendly parental gate shield with a padlock and child-safe checkmark icon, teal and navy palette (feature-safe.dim_560x420.png)",
+      "Teal checkmark merged with a small rocket launching upward, clean vector icon style on transparent background, used as the Vocal Trace logo mark (logo-icon.dim_80x80.png)"
+    ],
+    "edits": []
+  }
+}

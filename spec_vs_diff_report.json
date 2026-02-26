@@ -1,0 +1,94 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T09:57:38.053Z",
+  "summary": "The diff implements a comprehensive static landing page for Vocal Trace that covers nearly all specified requirements. All 10 requirements (REQ-1 through REQ-10) have corresponding component files. The implementation is thorough with the design system, Magic Jelly buttons, navbar, hero section, social proof bar, how it works section, feature showcase, testimonial, footer CTA, and scroll trail motif all present. A few minor gaps exist around exact copy matching and the SVG-rendered logo icon (using an image file instead of inline SVG). Some hallucinated features are also present.",
+  "missing_requirements": [
+    {
+      "id": "REQ-3",
+      "requirement": "Logo SVG is visible with teal rocket-checkmark icon rendered as SVG inline",
+      "reason": "The Navbar uses an img tag pointing to '/assets/generated/logo-icon.dim_80x80.png' rather than an inline SVG element for the teal checkmark-rocket icon as specified. The requirement explicitly states 'rendered as SVG'.",
+      "evidence": [
+        "frontend/src/components/Navbar.tsx"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "requirement": "Separate badges with subtle dividers",
+      "reason": "The SocialProofBar uses Tailwind's sm:divide-x for dividers but the divide color is not explicitly set to a visible value, making it unclear if subtle dividers actually render visibly between the badges.",
+      "evidence": [
+        "frontend/src/components/SocialProofBar.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Internet Identity authentication hooks and actor infrastructure",
+      "reason": "The diff includes useInternetIdentity.ts and useActor.ts with full AuthClient/Internet Identity integration. The build request explicitly states 'No backend logic is required; this is a purely static frontend landing page' and lists 'User authentication or login functionality' as a non-goal.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/main.tsx"
+      ]
+    },
+    {
+      "description": "Backend Motoko actor file",
+      "reason": "A backend/main.mo file was added. The build request specifies 'No backend logic is required; this is a purely static frontend landing page'.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Mini stats row in hero section with 50K+ Happy Families, 4.9 star App Rating, and 3 Wks Avg. First Word metrics",
+      "reason": "The hero section includes a stats row with three metrics that was not specified in REQ-4 or anywhere in the build request.",
+      "evidence": [
+        "frontend/src/components/HeroSection.tsx"
+      ]
+    },
+    {
+      "description": "Additional mini testimonial cards below the main testimonial from James T. and Priya K.",
+      "reason": "REQ-8 specifies a single testimonial card with Sarah M.'s quote only. The implementation adds two extra mini-testimonial cards that were not requested.",
+      "evidence": [
+        "frontend/src/components/TestimonialSection.tsx"
+      ]
+    },
+    {
+      "description": "React Query QueryClient and QueryClientProvider wrapping the entire app",
+      "reason": "main.tsx wraps the app with QueryClientProvider which is only needed for backend data fetching and is unnecessary for a purely static landing page as specified in the build request.",
+      "evidence": [
+        "frontend/src/main.tsx"
+      ]
+    },
+    {
+      "description": "Caffeine.ai attribution with UTM tracking in the footer",
+      "reason": "The footer file summary explicitly mentions caffeine.ai attribution with UTM tracking which was not part of any requirement in the build request.",
+      "evidence": [
+        "frontend/src/components/FooterCTA.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.79,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/FeatureShowcase.tsx",
+    "frontend/src/components/FooterCTA.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/HowItWorksSection.tsx",
+    "frontend/src/components/MagicJellyButton.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/components/ScrollTrailMotif.tsx",
+    "frontend/src/components/SocialProofBar.tsx",
+    "frontend/src/components/TestimonialSection.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

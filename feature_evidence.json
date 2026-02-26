@@ -1,0 +1,176 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-implement-a-global-design-system-using-primary-navy-blue-1a365d-accent-teal-green-2dada3-and-soft-cream-fef9f3-as-the-background-apply-a-heavy-sans-serif-font-e-g-nunito-or-poppins-via-google-fonts-for-all-headings-all-containers-must-use-border-radius-32px-no-sharp-corners-anywhere-on-the-page",
+      "featureTitle": "Implement a global design system using Primary Navy Blue (#1A365D), Accent Teal Green (#2DADA3), and Soft Cream (#FEF9F3) as the background. Apply a heavy sans-serif font (e.g., 'Nunito' or 'Poppins' via Google Fonts) for all headings. All containers must use border-radius: 32px. No sharp corners anywhere on the page.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-sticky-top-navigation-bar-with-the-vocal-trace-logo-navy-text-vocal-trace-with-a-teal-checkmark-rocket-icon-rendered-as-svg-on-the-left-navigation-links-in-the-center-and-a-small-magic-jelly-get-started-button-on-the-right-the-navbar-background-should-be-cream-fef9f3-with-a-subtle-shadow-on-scroll",
+      "featureTitle": "Build a sticky top navigation bar with the Vocal Trace logo (navy text 'Vocal Trace' with a teal checkmark-rocket icon rendered as SVG) on the left, navigation links in the center, and a small Magic Jelly 'Get Started' button on the right. The navbar background should be cream (#FEF9F3) with a subtle shadow on scroll.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navbar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-hero-section-with-headline-watch-their-first-words-take-flight-in-heavy-navy-type-sub-headline-the-speech-boosting-app-that-turns-vocal-traces-into-big-milestones-designed-by-experts-loved-by-little-explorers-a-giant-teal-magic-jelly-cta-button-labeled-start-the-journey-and-a-split-screen-illustration-left-side-showing-a-happy-toddler-right-side-showing-a-colorful-app-ui-with-a-peeking-friend-character-peeking-from-the-bottom-edge-of-a-rounded-screen-mockup",
+      "featureTitle": "Implement the Hero section with: headline 'Watch Their First Words Take Flight.' in heavy navy type, sub-headline 'The speech-boosting app that turns vocal traces into big milestones. Designed by experts, loved by little explorers.', a giant teal Magic Jelly CTA button labeled 'Start the Journey', and a split-screen illustration — left side showing a happy toddler, right side showing a colorful app UI with a 'Peeking Friend' character peeking from the bottom edge of a rounded screen mockup.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-social-proof-bar-below-the-hero-a-clean-horizontal-row-displaying-three-grayscale-trust-badges-logos-for-parent-s-choice-award-speech-pathology-approved-and-stem-kids-2026-use-small-illustrated-badge-icons-in-grayscale-with-the-label-text-below-each-separate-them-with-subtle-dividers",
+      "featureTitle": "Add a Social Proof Bar below the hero: a clean horizontal row displaying three grayscale trust badges/logos for 'Parent's Choice Award', 'Speech Pathology Approved', and 'STEM Kids 2026'. Use small illustrated badge icons in grayscale with the label text below each. Separate them with subtle dividers.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SocialProofBar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-the-how-it-works-section-with-a-bold-section-heading-three-equal-columns-each-with-a-large-rounded-icon-container-teal-background-a-step-number-a-bold-title-and-descriptive-copy-step-1-listen-vocal-trace-captures-your-child-s-unique-vocalizations-step-2-interact-our-magic-jelly-ui-responds-to-every-sound-with-delightful-haptic-feedback-step-3-grow-expert-backed-pathways-bridge-the-gap-between-babbling-and-words",
+      "featureTitle": "Build the 'How It Works' section with a bold section heading, three equal columns each with a large rounded icon container (teal background), a step number, a bold title, and descriptive copy. Step 1: 'Listen' – 'Vocal Trace captures your child's unique vocalizations.' Step 2: 'Interact' – 'Our Magic Jelly UI responds to every sound with delightful haptic feedback.' Step 3: 'Grow' – 'Expert-backed pathways bridge the gap between babbling and words.'",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/HowItWorksSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-feature-showcase-with-an-alternating-left-right-layout-for-two-features-feature-a-tactile-feedback-magic-jelly-buttons-that-squish-when-touched-to-teach-cause-and-effect-feature-b-safe-exploration-100-ad-free-kid-safe-environment-with-parental-gates-each-feature-row-should-have-an-illustration-mockup-on-one-side-and-bold-headline-copy-on-the-other-inside-a-rounded-32px-cream-or-light-teal-card",
+      "featureTitle": "Implement the Feature Showcase with an alternating left-right layout for two features. Feature A: 'Tactile Feedback' — 'Magic Jelly buttons that squish when touched to teach cause-and-effect.' Feature B: 'Safe Exploration' — '100% Ad-free, kid-safe environment with parental gates.' Each feature row should have an illustration/mockup on one side and bold headline + copy on the other, inside a rounded (32px) cream or light-teal card.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/FeatureShowcase.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-testimonial-section-with-a-large-soft-navy-teal-tinted-rounded-card-border-radius-32px-containing-a-parent-quote-about-their-child-s-speech-progress-the-parent-s-name-and-child-s-age-and-large-decorative-quotation-mark-use-a-sample-testimonial-vocal-trace-helped-our-daughter-say-her-first-real-word-in-just-three-weeks-we-cried-happy-tears-sarah-m-mom-of-lily-age-2",
+      "featureTitle": "Build a Testimonial Section with a large soft navy/teal-tinted rounded card (border-radius: 32px) containing a parent quote about their child's speech progress, the parent's name and child's age, and large decorative quotation mark. Use a sample testimonial: '\"Vocal Trace helped our daughter say her first real word in just three weeks. We cried happy tears!\" — Sarah M., Mom of Lily, age 2.'",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/TestimonialSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-footer-cta-section-with-a-bold-headline-encouraging-parents-to-get-started-a-teal-magic-jelly-button-labeled-unlock-their-voice-today-and-a-brief-supporting-tagline-below-it-include-a-minimal-footer-with-the-vocal-trace-logo-copyright-notice-and-links-to-privacy-policy-and-terms-of-use",
+      "featureTitle": "Add a Footer CTA section with a bold headline encouraging parents to get started, a teal Magic Jelly button labeled 'Unlock Their Voice Today', and a brief supporting tagline. Below it, include a minimal footer with the Vocal Trace logo, copyright notice, and links to Privacy Policy and Terms of Use.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/FooterCTA.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-scrolling-dot-trail-motif-connecting-all-page-sections-as-the-user-scrolls-a-series-of-small-teal-dots-inspired-by-the-vocal-trace-logo-motif-forms-a-decorative-vertical-path-along-the-left-or-center-of-the-page-creating-a-visual-trace-or-journey-between-sections-use-css-animation-or-an-svg-path-with-scroll-driven-opacity-position-to-bring-it-to-life",
+      "featureTitle": "Implement a scrolling dot-trail motif connecting all page sections. As the user scrolls, a series of small teal dots (inspired by the Vocal Trace logo motif) forms a decorative vertical path along the left or center of the page, creating a visual 'trace' or journey between sections. Use CSS animation or an SVG path with scroll-driven opacity/position to bring it to life.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ScrollTrailMotif.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

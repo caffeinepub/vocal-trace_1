@@ -1,0 +1,228 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Vocal Trace Toddler Speech App Landing Page",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Implement global design system with navy, teal, cream palette, heavy sans-serif fonts, and 32px border-radius on all containers",
+      "acceptanceCriteria": [
+        "All backgrounds default to #FEF9F3 cream",
+        "Primary headings render in #1A365D navy",
+        "Accent elements use #2DADA3 teal",
+        "border-radius: 32px is applied to all card and container elements",
+        "Headings use a heavy weight (700–900) sans-serif font loaded from Google Fonts"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add Google Fonts import for Nunito or Poppins with heavy weights (700-900). Define CSS custom properties for Primary Navy Blue (#1A365D), Accent Teal Green (#2DADA3), and Soft Cream (#FEF9F3). Set global body background to cream. Apply heavy sans-serif font family to all headings (h1-h6) with navy color."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme with custom colors: primary-navy (#1A365D), accent-teal (#2DADA3), soft-cream (#FEF9F3). Add custom borderRadius values ensuring 32px is the default for rounded elements. Configure fontFamily to include the heavy sans-serif Google Font."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Create Magic Jelly style CTA buttons with 3D gummy candy appearance using glossy teal background, inner glow, drop shadow, and squish press effect",
+      "acceptanceCriteria": [
+        "Teal buttons have a visible gloss/shine effect using CSS gradients or pseudo-elements",
+        "A heavy inset box-shadow creates an inner glow effect",
+        "A drop shadow is visible beneath each button",
+        "Pressing (active state) scales the button down slightly (e.g., scale(0.96))",
+        "All teal buttons share this consistent style via a reusable component or CSS class"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ui/MagicJellyButton.tsx",
+          "operation": "create",
+          "description": "Create a reusable MagicJellyButton component with teal background (#2DADA3), border-radius: 32px, glossy gradient overlay using linear-gradient or pseudo-element, heavy inset box-shadow for inner glow effect with lighter teal, drop shadow beneath (box-shadow with positive y-offset), and :active state with transform: scale(0.96) for squish effect. Accept children and onClick props."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Build sticky navigation bar with Vocal Trace logo SVG (navy text with teal checkmark-rocket icon), center navigation links, and Magic Jelly 'Get Started' button",
+      "acceptanceCriteria": [
+        "Navbar is sticky and remains visible on scroll",
+        "Logo SVG is visible with teal rocket-checkmark icon and navy 'Vocal Trace' text",
+        "Navigation links are present (e.g., How It Works, Features, Testimonials)",
+        "A Magic Jelly CTA button appears in the top right",
+        "A shadow appears on the navbar when the user scrolls down"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "create",
+          "description": "Create sticky navigation bar component with cream background (#FEF9F3). Include inline SVG for Vocal Trace logo (navy 'Vocal Trace' text with teal checkmark-rocket icon referencing frontend/public/assets/generated/logo-icon.dim_80x80.png as visual guide). Add navigation links in center (How It Works, Features, Testimonials) with smooth scroll anchors. Place MagicJellyButton labeled 'Get Started' on the right. Implement scroll event listener to add shadow class when scrollY > 0."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Navbar component at the top of the application, ensuring it remains sticky across all page scrolls."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Implement Hero section with bold headline, sub-headline, giant Magic Jelly CTA, and split-screen illustration showing toddler and app mockup with Peeking Friend character",
+      "acceptanceCriteria": [
+        "Headline text matches exactly: 'Watch Their First Words Take Flight.'",
+        "Sub-headline text matches exactly",
+        "A large teal Magic Jelly button labeled 'Start the Journey' is prominently displayed",
+        "A split-screen visual is present showing toddler illustration and app UI mockup",
+        "The Peeking Friend character peeks from the bottom of the app mockup panel",
+        "The hero section fills the viewport on desktop"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "create",
+          "description": "Create Hero section component with full viewport height on desktop. Display headline 'Watch Their First Words Take Flight.' in heavy navy font. Add sub-headline 'The speech-boosting app that turns vocal traces into big milestones. Designed by experts, loved by little explorers.' Below headline, place large MagicJellyButton labeled 'Start the Journey'. Implement split-screen layout: left side displays frontend/public/assets/generated/hero-toddler.dim_600x700.png, right side displays frontend/public/assets/generated/hero-app-mockup.dim_600x700.png with Peeking Friend character visible at bottom edge of mockup."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render HeroSection component immediately after Navbar in the main application layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add Social Proof Bar displaying three grayscale trust badge icons with labels for Parent's Choice Award, Speech Pathology Approved, and STEM Kids 2026",
+      "acceptanceCriteria": [
+        "Three trust badges are displayed in a single horizontal row",
+        "All badge icons and text are rendered in grayscale",
+        "Badge labels match: 'Parent's Choice Award', 'Speech Pathology Approved', 'STEM Kids 2026'",
+        "The bar sits between the hero and the How It Works section"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SocialProofBar.tsx",
+          "operation": "create",
+          "description": "Create horizontal Social Proof Bar component with three badge items displayed in a row with subtle dividers. Each badge displays a grayscale icon image and label text below. First badge: frontend/public/assets/generated/badge-parents-choice.dim_120x120.png with label 'Parent's Choice Award'. Second badge: frontend/public/assets/generated/badge-speech-pathology.dim_120x120.png with label 'Speech Pathology Approved'. Third badge: frontend/public/assets/generated/badge-stem-kids.dim_120x120.png with label 'STEM Kids 2026'. Apply grayscale filter to all badge images."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render SocialProofBar component after HeroSection and before HowItWorksSection."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Build How It Works section with three equal columns showing Listen, Interact, and Grow steps with rounded teal icon containers and step numbers",
+      "acceptanceCriteria": [
+        "Section has a bold heading (e.g., 'How It Works')",
+        "Three columns are displayed side by side on desktop, stacked on mobile",
+        "Each column has a rounded icon container with teal background",
+        "Step titles and descriptions match the specified copy exactly",
+        "Step numbers (1, 2, 3) are visually prominent"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HowItWorksSection.tsx",
+          "operation": "create",
+          "description": "Create How It Works section with bold heading 'How It Works' in navy. Display three columns (responsive: side-by-side on desktop, stacked on mobile). Step 1: large rounded icon container with teal background, step number '1', bold title 'Listen', description 'Vocal Trace captures your child's unique vocalizations.' Step 2: icon container, number '2', title 'Interact', description 'Our Magic Jelly UI responds to every sound with delightful haptic feedback.' Step 3: icon container, number '3', title 'Grow', description 'Expert-backed pathways bridge the gap between babbling and words.' All containers use border-radius: 32px."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render HowItWorksSection component after SocialProofBar."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Implement Feature Showcase with alternating left-right layout for Tactile Feedback and Safe Exploration features in rounded cards",
+      "acceptanceCriteria": [
+        "Two feature rows are displayed with alternating image/text orientation",
+        "Feature A copy references Magic Jelly squish and cause-and-effect",
+        "Feature B copy references 100% Ad-free, kid-safe, and parental gates",
+        "Each row is wrapped in a rounded container (border-radius: 32px)",
+        "Layout reverses cleanly on desktop (image-left / image-right alternation)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FeatureShowcase.tsx",
+          "operation": "create",
+          "description": "Create Feature Showcase component with two feature rows in alternating layout. Feature A: image on left showing frontend/public/assets/generated/feature-tactile.dim_560x420.png, text on right with bold headline 'Tactile Feedback' and copy 'Magic Jelly buttons that squish when touched to teach cause-and-effect.' Feature B: image on right showing frontend/public/assets/generated/feature-safe.dim_560x420.png, text on left with headline 'Safe Exploration' and copy '100% Ad-free, kid-safe environment with parental gates.' Each feature row wrapped in rounded container (border-radius: 32px) with cream or light-teal background."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render FeatureShowcase component after HowItWorksSection."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Build Testimonial Section with large rounded card containing parent quote, decorative quotation marks, and attribution",
+      "acceptanceCriteria": [
+        "A large rounded card (32px radius) is displayed centered on the page",
+        "The card contains a parent testimonial quote, name, and child's age",
+        "A large decorative quotation mark is visible",
+        "The card uses a soft teal or navy-tinted background to distinguish it from the cream page background"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TestimonialSection.tsx",
+          "operation": "create",
+          "description": "Create Testimonial Section with large centered rounded card (border-radius: 32px, soft navy or teal-tinted background). Display large decorative quotation mark. Include testimonial quote: '\"Vocal Trace helped our daughter say her first real word in just three weeks. We cried happy tears!\"' followed by attribution '— Sarah M., Mom of Lily, age 2.' Style with appropriate padding and typography hierarchy."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render TestimonialSection component after FeatureShowcase."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Add Footer CTA section with bold headline, Magic Jelly button, and minimal footer with logo and links",
+      "acceptanceCriteria": [
+        "A prominent section above the footer contains a bold headline and the 'Unlock Their Voice Today' Magic Jelly button",
+        "The footer includes the Vocal Trace logo, copyright line, and Privacy/Terms links",
+        "The CTA button matches the Magic Jelly style defined in REQ-2"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FooterCTA.tsx",
+          "operation": "create",
+          "description": "Create Footer CTA section with bold navy headline encouraging parents to get started, MagicJellyButton labeled 'Unlock Their Voice Today', and supporting tagline below. Follow with minimal footer containing Vocal Trace logo (inline SVG with navy text and teal icon), copyright notice, and links to Privacy Policy and Terms of Use."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render FooterCTA component after TestimonialSection at the bottom of the application."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Implement scrolling dot-trail motif showing teal dots forming a decorative vertical path between sections",
+      "acceptanceCriteria": [
+        "Teal dots are visible as a decorative trail between sections",
+        "The trail animates or reveals progressively as the user scrolls down",
+        "Dots are styled to match the teal brand color (#2DADA3)",
+        "The motif does not obstruct readable content and remains decorative"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ScrollTrailMotif.tsx",
+          "operation": "create",
+          "description": "Create scroll-driven decorative dot trail component. Position a series of small teal (#2DADA3) dots along the left or center vertical axis connecting page sections. Implement scroll event listener to progressively reveal dots with opacity/position animation as user scrolls down. Use CSS transforms or SVG path animation. Ensure dots remain decorative and non-obstructive to content."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render ScrollTrailMotif component as an overlay element in the main application, positioned to span the full page height."
+        }
+      ]
+    }
+  ]
+}

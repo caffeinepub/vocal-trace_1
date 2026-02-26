@@ -1,0 +1,256 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T09:57:38.056Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 10,
+    "implemented": 9,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Implement a global design system using Primary Navy Blue (#1A365D), Accent Teal Green (#2DADA3), and Soft Cream (#FEF9F3) as the background. Apply a heavy sans-serif font (e.g., 'Nunito' or 'Poppins' via Google Fonts) for all headings. All containers must use border-radius: 32px. No sharp corners anywhere on the page.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js"
+        ]
+      },
+      {
+        "id": "REQ-10",
+        "summary": "Implement a scrolling dot-trail motif connecting all page sections. As the user scrolls, a series of small teal dots (inspired by the Vocal Trace logo motif) forms a decorative vertical path along the left or center of the page, creating a visual 'trace' or journey between sections. Use CSS animation or an SVG path with scroll-driven opacity/position to bring it to life.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ScrollTrailMotif.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ScrollTrailMotif.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Create all Teal CTA buttons as 3D 'Magic Jelly' style: glossy background (#2DADA3), heavy inner-glow (inset box-shadow with a lighter teal), a subtle drop shadow beneath, border-radius: 32px, and a slight scale-down transform on :active to simulate a squish press. These buttons must look like 3D gummy candy.",
+        "status": "missing",
+        "plannedFiles": [
+          "frontend/src/components/ui/MagicJellyButton.tsx"
+        ],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Build a sticky top navigation bar with the Vocal Trace logo (navy text 'Vocal Trace' with a teal checkmark-rocket icon rendered as SVG) on the left, navigation links in the center, and a small Magic Jelly 'Get Started' button on the right. The navbar background should be cream (#FEF9F3) with a subtle shadow on scroll.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Implement the Hero section with: headline 'Watch Their First Words Take Flight.' in heavy navy type, sub-headline 'The speech-boosting app that turns vocal traces into big milestones. Designed by experts, loved by little explorers.', a giant teal Magic Jelly CTA button labeled 'Start the Journey', and a split-screen illustration — left side showing a happy toddler, right side showing a colorful app UI with a 'Peeking Friend' character peeking from the bottom edge of a rounded screen mockup.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/HeroSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/HeroSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Add a Social Proof Bar below the hero: a clean horizontal row displaying three grayscale trust badges/logos for 'Parent's Choice Award', 'Speech Pathology Approved', and 'STEM Kids 2026'. Use small illustrated badge icons in grayscale with the label text below each. Separate them with subtle dividers.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/SocialProofBar.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/SocialProofBar.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Build the 'How It Works' section with a bold section heading, three equal columns each with a large rounded icon container (teal background), a step number, a bold title, and descriptive copy. Step 1: 'Listen' – 'Vocal Trace captures your child's unique vocalizations.' Step 2: 'Interact' – 'Our Magic Jelly UI responds to every sound with delightful haptic feedback.' Step 3: 'Grow' – 'Expert-backed pathways bridge the gap between babbling and words.'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/HowItWorksSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/HowItWorksSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Implement the Feature Showcase with an alternating left-right layout for two features. Feature A: 'Tactile Feedback' — 'Magic Jelly buttons that squish when touched to teach cause-and-effect.' Feature B: 'Safe Exploration' — '100% Ad-free, kid-safe environment with parental gates.' Each feature row should have an illustration/mockup on one side and bold headline + copy on the other, inside a rounded (32px) cream or light-teal card.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FeatureShowcase.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FeatureShowcase.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Build a Testimonial Section with a large soft navy/teal-tinted rounded card (border-radius: 32px) containing a parent quote about their child's speech progress, the parent's name and child's age, and large decorative quotation mark. Use a sample testimonial: '\"Vocal Trace helped our daughter say her first real word in just three weeks. We cried happy tears!\" — Sarah M., Mom of Lily, age 2.'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/TestimonialSection.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/TestimonialSection.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Add a Footer CTA section with a bold headline encouraging parents to get started, a teal Magic Jelly button labeled 'Unlock Their Voice Today', and a brief supporting tagline. Below it, include a minimal footer with the Vocal Trace logo, copyright notice, and links to Privacy Policy and Terms of Use.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/FooterCTA.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/FooterCTA.tsx",
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/badge-parents-choice.dim_120x120.png",
+    "frontend/public/assets/generated/badge-speech-pathology.dim_120x120.png",
+    "frontend/public/assets/generated/badge-stem-kids.dim_120x120.png",
+    "frontend/public/assets/generated/feature-safe.dim_560x420.png",
+    "frontend/public/assets/generated/feature-tactile.dim_560x420.png",
+    "frontend/public/assets/generated/hero-app-mockup.dim_600x700.png",
+    "frontend/public/assets/generated/hero-toddler.dim_600x700.png",
+    "frontend/public/assets/generated/logo-icon.dim_80x80.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/FeatureShowcase.tsx",
+    "frontend/src/components/FooterCTA.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/HowItWorksSection.tsx",
+    "frontend/src/components/MagicJellyButton.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/components/ScrollTrailMotif.tsx",
+    "frontend/src/components/SocialProofBar.tsx",
+    "frontend/src/components/TestimonialSection.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
